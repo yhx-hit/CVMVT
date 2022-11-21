@@ -12,6 +12,6 @@ The ISAR image data is in the form of complex-valued. We can get the content by:
 ```
   import h5py
   input_dict = h5py.File(dataset)
-  img = input_dict['s3']
+  img = input_dict['output']
   img_real = img['real'].astype(np.float32)
   img_imag = img['imag'].astype(np.float32)
